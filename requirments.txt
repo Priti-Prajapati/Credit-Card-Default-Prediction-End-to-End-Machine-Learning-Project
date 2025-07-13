@@ -2,7 +2,6 @@ kagglehub
 pandas
 matplotlib
 seaborn
-imblearn
+imbalanced-learn
 streamlit
 scikit-learn
-pickle
