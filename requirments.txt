@@ -1,8 +1,8 @@
-kagglehub
+streamlit
 pandas
+numpy
 matplotlib
 seaborn
-imbalanced-learn
-streamlit
 scikit-learn
+imbalanced-learn
 joblib
