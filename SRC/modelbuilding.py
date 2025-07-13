@@ -1,3 +1,4 @@
+import pandas as pd
 df=pd.read_csv(r'C:\Users\PRITI\.cache\kagglehub\datasets\uciml\default-of-credit-card-clients-dataset\versions\1\UCI_Credit_Card.csv')
 
 import pandas as pd
@@ -37,10 +38,10 @@ print(classification_report(y_test,predict))
 
 import pickle
 
-with open(r'C:\Users\PRITI\Desktop\Credit Card\Models\model_pkl','wb') as file:
+with open(r'C:\Users\PRITI\Desktop\Credit Card\Models\model.pkl','wb') as file:
         pickle.dump(lr,file)
 
-with open(r'C:\Users\PRITI\Desktop\Credit Card\Models\model_pkl','rb') as file:
+with open(r'C:\Users\PRITI\Desktop\Credit Card\Models\model.pkl','rb') as file:
         loaded_model=pickle.load(file)
 
 loaded_model.predict(x_test_scaled)
