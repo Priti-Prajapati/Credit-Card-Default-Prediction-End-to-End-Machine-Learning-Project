@@ -8,7 +8,7 @@ import numpy as np
 import sklearn
 
 with open('Models/model.pkl', 'rb') as file: 
-        model = joblib.load("model_pkl/model.pkl")
+        model = joblib.load(file)
 
 
 x = pd.read_csv('Data/cleandata/clean.csv')
