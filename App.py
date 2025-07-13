@@ -8,7 +8,7 @@ with open('Models/model_pkl', 'rb') as file:
         model = pickle.load(file)
 
 
-x = pd.read_csv('Data/preprocessdata/x.csv')
+x = pd.read_csv('Data/cleandata/clean.csv')
 
 
 st.title("Credit Risk Prediction App")
