@@ -4,11 +4,11 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-with open(r'Models\model_pkl', 'rb') as file: 
+with open('Models/model_pkl', 'rb') as file: 
         model = pickle.load(file)
 
 
-x = pd.read_csv(r'C:\Users\PRITI\Desktop\Credit Card\Data\preprocessdata\x.csv')
+x = pd.read_csv('Data/preprocessdata/x.csv')
 
 
 st.title("Credit Risk Prediction App")
