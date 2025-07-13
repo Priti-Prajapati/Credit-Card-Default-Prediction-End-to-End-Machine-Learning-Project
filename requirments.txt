@@ -6,3 +6,4 @@ seaborn
 imblearn
 streamlit
 scikit-learn
+pickle
