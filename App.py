@@ -1,4 +1,6 @@
-import pickle
+import joblib
+
+
 
 import streamlit as st
 import pandas as pd
@@ -6,7 +8,7 @@ import numpy as np
 import sklearn
 
 with open('Models/model.pkl', 'rb') as file: 
-        model = pickle.load(file)
+        model = joblib.load("model_pkl/model.pkl")
 
 
 x = pd.read_csv('Data/cleandata/clean.csv')
